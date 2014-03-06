@@ -1,0 +1,14 @@
+<html>
+<body>
+	<h1>Welcome to <%=node["company"]%>!</h1>
+	
+	<h2>Hello from <%= node["fqdn"]%>! </h2>
+	<p>
+		This server has <%= node["memory"]["total"].to_i / 1024 %> MB memory.
+	</p>
+	<p>
+		This is version 0.2.0 of the cookbook!
+		This change is simple but an effective way of demonstrating cookbook versions. 
+		</p>
+</body>
+</html>
